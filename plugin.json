@@ -1,0 +1,13 @@
+{
+	"ID": "1d69da9c-1a82-4097-913c-954472e51f28",
+	"ActionKeyword": "i",
+	"Disabled": false,
+	"IsGlobal": false,
+	"Name": "Hub",
+	"Author": "isot.jpeg",
+	"Version": "2.0.0",
+	"Language": "csharp",
+	"ExecuteFileName": "Community.PowerToys.Run.Plugin.hub.dll",
+	"IcoPathDark": "Images\\Translate.dark.png",
+	"IcoPathLight": "Images\\Translate.light.png"
+}
