@@ -1,10 +1,7 @@
 using System.Diagnostics;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Windows.Controls;
 using Wox.Plugin;
-using Newtonsoft.Json.Linq;
 
 namespace Community.PowerToys.Run.Plugin.hub
 {
@@ -33,28 +30,44 @@ namespace Community.PowerToys.Run.Plugin.hub
                     Title = "Translate",
                     SubTitle = "Use 'tr' to translate text or sentence",
                     IcoPath = "Images\\Translate.dark.png",
-                    Action = e => { return true; }
+                    Action = e =>
+                    {
+                        _context?.API.ChangeQuery($"{query.RawQuery} tr ");
+                        return false; 
+                    }
                 });
                 results.Add(new Result
                 {
                     Title = "Search in Google Scholar",
                     SubTitle = "Use 'ara' to search in Google Scholar",
                     IcoPath = "Images\\Scholar.dark.png",
-                    Action = e => { return true; }
+                    Action = e =>
+                    {
+                        _context?.API.ChangeQuery($"{query.RawQuery} ara ");
+                        return false; 
+                    }
                 });
                 results.Add(new Result
                 {
                     Title = "Search in ChatGPT",
                     SubTitle = "Use 'gpt' to search in ChatGPT",
                     IcoPath = "Images\\GPT.dark.png",
-                    Action = e => { return true; }
+                    Action = e =>
+                    {
+                        _context?.API.ChangeQuery($"{query.RawQuery} gpt ");
+                        return false;
+                    }
                 });
                 results.Add(new Result
                 {
                     Title = "Search in DuckDuckGo",
                     SubTitle = "Use 'dd' to search in DuckDuckGo",
                     IcoPath = "Images\\DDG.dark.png",
-                    Action = e => { return true; }
+                    Action = e =>
+                    {
+                        _context?.API.ChangeQuery($"{query.RawQuery} dd ");
+                        return false;
+                    }
                 });
             }
             else if (query.Search.Length > 0)
