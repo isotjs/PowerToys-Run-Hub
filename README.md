@@ -2,6 +2,9 @@
 
 This is a PowerToys Run plugin that provides a versatile set of tools directly accessible via the PowerToys Run search interface. It allows users to quickly translate words or sentences, search for information in Google Scholar, use ChatGPT, or search the web via DuckDuckGo.
 
+# Update Notes
+- 14.01.2025: From know on you can click to the "IsNullOrWhiteSpace" Menu to use the commands.
+
 ## Features
 
 - **Translate**: Translate text using Tureng, or sentences using DeepL.
